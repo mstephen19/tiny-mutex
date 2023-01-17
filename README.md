@@ -1,5 +1,7 @@
 # Tiny Mutex
 
+[![TypeScript](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)](https://www.typescriptlang.org/) [![Install size](https://packagephobia.com/badge?p=speedwalk@latest)](https://packagephobia.com/result?p=tiny-mutex@latest)
+
 Lightweight and simple mutexes.
 
 ## Features
