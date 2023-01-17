@@ -2,3 +2,4 @@ src
 tsconfig.json
 .git
 .DS_Store
+.gitignore
