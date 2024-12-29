@@ -8,19 +8,17 @@ Lightweight and simple mutexes.
 
 - Zero dependencies. Small bundle size.
 - Written in TypeScript.
+- CommonJS & ESModules support.
+- Thread-safe. Works with worker threads and multithreading libraries like [Piscina](https://www.npmjs.com/package/piscina).
 - Simple to use. Modeled after Golang's [`sync.Mutex`](https://go.dev/tour/concurrency/9)
-- Modern ESModules support.
-- Thread-safe. Works perfectly with multithreading libraries like [Nanolith](https://www.npmjs.com/package/nanolith).
 
 ## Usage
 
-It's dead simple. There are only three functions to know.
-
 ```TypeScript
-import { newMutex, lock, unlock } from 'tiny-mutex'
+import { createMutex, lock, unlock } from 'tiny-mutex'
 
-// Create a mutex
-const mutex = newMutex();
+// Create a mutex, usable in a cross-thread context
+const mutex = createMutex();
 
 async function doWorkflow(shared: Uint8Array) {
     // Wait until the mutex is unlocked, then lock it.

@@ -1,10 +1,12 @@
 {
     "name": "tiny-mutex",
     "description": "Lightweight and simple mutexes.",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "main": "./build/index.js",
-    "exports": "./build/index.js",
     "author": "Matt Stephens",
+    "scripts": {
+        "build": "tsc"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/mstephen19/tiny-mutex"
@@ -23,6 +25,5 @@
         "mux",
         "lock"
     ],
-    "license": "MIT",
-    "type": "module"
+    "license": "MIT"
 }
